@@ -8,5 +8,5 @@ Este proyecto busca recrear la esencia de los clásicos minijuegos de <em>Mario 
 Ideal para partidas cortas, pero con la tensión suficiente para mantenerte al borde del asiento.
 </p>
 
-<img src="imagenesredmi/captura.png" alt="Captura del juego" width="500">
+<img src="../tarea_3/imagenesredmi/juego.png">
 
