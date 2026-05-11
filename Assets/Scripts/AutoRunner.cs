@@ -29,7 +29,7 @@ public class AutoRunner : MonoBehaviour
 
     void Update()
     {
-        // Detectar Space
+        // se detecta el boton space 
         bool spacePressed = false;
         #if ENABLE_INPUT_SYSTEM
         if (Keyboard.current != null) spacePressed = Keyboard.current.spaceKey.wasPressedThisFrame;
@@ -38,7 +38,7 @@ public class AutoRunner : MonoBehaviour
         if (!spacePressed) spacePressed = Input.GetKeyDown(KeyCode.Space);
         #endif
 
-        // Ground check
+        
         isGrounded = Physics.Raycast(transform.position, Vector3.down, groundCheckDistance);
 
         if (isGrounded)
@@ -90,8 +90,8 @@ public class AutoRunner : MonoBehaviour
 
             if (animator != null)
             {
-                animator.SetFloat("Speed", 0f);   // fuerza Idle
-                animator.SetTrigger("Win");       // opcional: animación de victoria
+                animator.SetFloat("Speed", 0f);   
+                animator.SetTrigger("Win");       // 
             }
 
             Debug.Log("¡Has llegado a la meta!");
